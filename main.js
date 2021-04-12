@@ -102,10 +102,10 @@ core.cmd('keyboard', ($) => {
   $.keyboard(kbd);
 }, 'demo keyboard');
 
-// core.cmd('rmkbd', ($) => {
-//   $.text('Ok, ok, no keyboard for you.');
-//   $.removeKeyboard();
-// }, 'removes keyboard');
+core.cmd('rmkbd', ($) => {
+  $.text('Ok, ok, no keyboard for you.');
+  $.removeKeyboard();
+}, 'removes keyboard');
 
 core.cmd('now', ($) => {
   // Format time using 'moment' library
