@@ -24,10 +24,10 @@ const { Color, button, Keyboard } = vk.kbd;
 const kbd = new Keyboard([
   // Rows
   [
-    button.text('/now'),
-    button.text('/info', Color.Primary),
-    button.text('/rmkbd', Color.Negative),
-    button.text('/help', Color.Positive),
+    button.text('!now'),
+    button.text('!info', Color.Primary),
+    button.text('!girls', Color.Negative),
+    button.text('!help', Color.Positive),
   ],
   [
     button.text('Max rows: 10', Color.Secondary, { a: 'b' }),
@@ -102,10 +102,10 @@ core.cmd('keyboard', ($) => {
   $.keyboard(kbd);
 }, 'demo keyboard');
 
-core.cmd('rmkbd', ($) => {
-  $.text('Ok, ok, no keyboard for you.');
-  $.removeKeyboard();
-}, 'removes keyboard');
+// core.cmd('rmkbd', ($) => {
+//   $.text('Ok, ok, no keyboard for you.');
+//   $.removeKeyboard();
+// }, 'removes keyboard');
 
 core.cmd('now', ($) => {
   // Format time using 'moment' library
@@ -126,6 +126,10 @@ core.cmd('info', async ($) => {
 
   $.text(`User ID: ${uid}\nName: ${name} ${surname}`);
 }, 'uses VK API to get some information about you');
+
+core.cmd('info', async ($) => {
+  $.text('[https://vk.com/brazzucas|brazzucas]');
+});
 
 // //////////////////////////         REGEX           ///////////////////////////
 
