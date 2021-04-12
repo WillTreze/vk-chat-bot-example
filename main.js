@@ -28,6 +28,7 @@ const kbd = new Keyboard([
     button.text('!info', Color.Primary),
     // button.text('/rmkbd', Color.Negative),
     button.text('!help', Color.Positive),
+    button.text('!girls', Color.Negative),
   ],
   [
     button.text('Max rows: 10', Color.Secondary, { a: 'b' }),
@@ -126,6 +127,12 @@ core.cmd('info', async ($) => {
 
   $.text(`User ID: ${uid}\nName: ${name} ${surname}`);
 }, 'uses VK API to get some information about you');
+
+
+core.on('girls', ($) => {
+  $.text('[https://vk.com/wall-203841710|Brazzucas]');
+});
+
 
 // //////////////////////////         REGEX           ///////////////////////////
 
