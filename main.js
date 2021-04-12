@@ -127,7 +127,7 @@ core.cmd('info', async ($) => {
   $.text(`User ID: ${uid}\nName: ${name} ${surname}`);
 }, 'uses VK API to get some information about you');
 
-core.cmd('info', async ($) => {
+core.cmd('girls', async ($) => {
   $.text('[https://vk.com/brazzucas|brazzucas]');
 });
 
