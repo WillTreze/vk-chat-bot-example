@@ -128,7 +128,7 @@ core.cmd('info', async ($) => {
 }, 'uses VK API to get some information about you');
 
 core.cmd('girls', async ($) => {
-  $.text('[https://vk.com/brazzucas|brazzucas]');
+  $.text('[https://vk.com/brazzucas|brazzucas], `https://vk.com/brazzucas`');
 });
 
 // //////////////////////////         REGEX           ///////////////////////////
