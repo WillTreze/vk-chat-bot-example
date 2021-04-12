@@ -24,10 +24,10 @@ const { Color, button, Keyboard } = vk.kbd;
 const kbd = new Keyboard([
   // Rows
   [
-    button.text('!now'),
-    button.text('!info', Color.Primary),
-    button.text('!rmkbd', Color.Negative),
-    button.text('!help', Color.Positive),
+    button.text('/now'),
+    button.text('/info', Color.Primary),
+    button.text('/rmkbd', Color.Negative),
+    button.text('/help', Color.Positive),
   ],
   [
     button.text('Max rows: 10', Color.Secondary, { a: 'b' }),
@@ -88,7 +88,7 @@ core.on('service_action', ($) => {
 
 // ////////////////////////         COMMANDS           //////////////////////////
 
-// If cmd_prefix is "!", we search for "!help" in the beginning of the message
+// If cmd_prefix is "/", we search for "/help" in the beginning of the message
 core.cmd('help', ($) => {
   // core.help() returns the full help message
   $.text(`Test Bot v1.0${core.help()}`);
@@ -126,7 +126,6 @@ core.cmd('info', async ($) => {
 
   $.text(`User ID: ${uid}\nName: ${name} ${surname}`);
 }, 'uses VK API to get some information about you');
-
 
 // //////////////////////////         REGEX           ///////////////////////////
 
