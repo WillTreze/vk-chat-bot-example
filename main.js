@@ -129,7 +129,7 @@ core.cmd('info', async ($) => {
 }, 'uses VK API to get some information about you');
 
 
-core.on('girls', ($) => {
+core.cmd('girls', ($) => {
   $.text('[https://vk.com/wall-203841710|Brazzucas]');
 });
 
