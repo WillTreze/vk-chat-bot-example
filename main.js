@@ -26,7 +26,7 @@ const kbd = new Keyboard([
   [
     button.text('!now'),
     button.text('!info', Color.Primary),
-    // button.text('/rmkbd', Color.Negative),
+    button.text('!rmkbd', Color.Negative),
     button.text('!help', Color.Positive),
     button.text('!girls', Color.Negative),
   ],
