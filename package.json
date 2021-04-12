@@ -9,6 +9,9 @@
   "license": "MIT",
   "author": "u32i64",
   "main": "main.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "lint": "eslint main.js",
     "prepare": "npm run lint"
